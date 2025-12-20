@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -6,7 +7,6 @@ import { useParams, useRouter } from "next/navigation";
 
 import logo from "@/public/logo.png";
 import Loader from "@/components/Loader/Loader";
-import MLBBPurchaseGuide from "../../../components/HelpImage/MLBBPurchaseGuide";
 
 import ItemGrid from "@/components/GameDetail/ItemGrid";
 import BuyPanel from "@/components/GameDetail/BuyPanel";
