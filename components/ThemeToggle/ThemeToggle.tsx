@@ -3,24 +3,64 @@
 import { useEffect, useState } from "react";
 
 const themes = [
+  // 🌍 Core
   { id: "light", icon: "☀️", label: "Light" },
   { id: "dark", icon: "🌙", label: "Dark" },
-  { id: "sakura", icon: "🌸", label: "Sakura" },
-  { id: "violet", icon: "💜", label: "Violet" },
-  { id: "ember", icon: "🔥", label: "Ember" },
-  { id: "midnight", icon: "🌪️", label: "Midnight" },
-  { id: "ocean", icon: "🌊", label: "Ocean" },
-  { id: "forest", icon: "🍃", label: "Forest" },
-  { id: "crimson", icon: "🩸", label: "Crimson" },
-  { id: "galaxy", icon: "🌌", label: "Galaxy" },
-  { id: "sunset", icon: "🌅", label: "Sunset" },
-  { id: "ice", icon: "❄️", label: "Ice" },
-  { id: "monochrome", icon: "🎭", label: "Monochrome" },
-  { id: "tropical", icon: "🌺", label: "Tropical" },
-  { id: "retro", icon: "👾", label: "Retro" },
-    { id: "cyber", icon: "💠", label: "Cyber" },
 
+  // ⚡ Creative / Gaming
+  { id: "cyber", icon: "⚡", label: "Cyber Neon" },
+  { id: "retro", icon: "👾", label: "Retro Arcade" },
+  { id: "matrix", icon: "🧬", label: "Matrix" },
+  { id: "neonlime", icon: "🧿", label: "Neon Lime" },
+
+  // 🌸 Soft / Aesthetic
+  { id: "sakura", icon: "🌸", label: "Sakura" },
+  // { id: "aqua", icon: "🌊", label: "Aqua Wave" },
+  { id: "autumn", icon: "🍂", label: "Autumn" },
+
+  // 💖 Girly / Cute
+  { id: "rose", icon: "🌹", label: "Rose Blush" },
+  { id: "lavender", icon: "💜", label: "Lavender Dream" },
+  { id: "peach", icon: "🍑", label: "Peach Glow" },
+  // { id: "cotton", icon: "🍬", label: "Cotton Candy" },
+  // { id: "bubblegum", icon: "🎀", label: "Bubblegum Pop" },
+  // { id: "cherry", icon: "🍒", label: "Cherry Kiss" },
+  { id: "vanilla", icon: "🍦", label: "Vanilla Cream" },
+
+  // 🔥 Bold / Aggressive
+  { id: "inferno", icon: "🔥", label: "Inferno" },
+  { id: "crimson", icon: "🩸", label: "Crimson Noir" },
+
+  // 🧔 Manly / Strong
+  { id: "steel", icon: "🔩", label: "Steel Gray" },
+  // { id: "gunmetal", icon: "🛠️", label: "Gunmetal" },
+  // { id: "midnightblack", icon: "🖤", label: "Midnight Black" },
+  // { id: "royalblue", icon: "👑", label: "Royal Blue" },
+  { id: "bloodiron", icon: "🩸", label: "Blood Iron" },
+  // { id: "warzone", icon: "⚔️", label: "War Zone" },
+  { id: "carbon", icon: "🏴", label: "Carbon Fiber" },
+
+  // 🌲 Calm / Natural
+  { id: "forest", icon: "🌲", label: "Forest" },
+  { id: "emerald", icon: "🪙", label: "Finance Emerald" },
+
+  // 🌌 Dark / Premium
+  { id: "void", icon: "🌌", label: "Void Purple" },
+  // { id: "obsidian", icon: "🪐", label: "Obsidian" },
+  { id: "midnight", icon: "🌙", label: "Midnight Blue" },
+
+  // 🧊 Modern / SaaS
+  { id: "glass", icon: "🧊", label: "Glass" },
+  { id: "slate", icon: "🧠", label: "Slate Pro" },
+  // { id: "frost", icon: "❄️", label: "Frost" },
+
+  // 🎨 Creator / Luxury
+  { id: "solar", icon: "🟡", label: "Solar Gold" },
+  // { id: "sunset", icon: "🌅", label: "Sunset" },
+  { id: "prism", icon: "🌈", label: "Prism" },
 ];
+
+
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<string>("dark");

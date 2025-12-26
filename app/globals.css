@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
-/* 🌍 Base Theme (Default Light) */
+/* ======================================================
+   🌍 BASE THEME VARIABLES (LIGHT – DEFAULT)
+   ====================================================== */
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
-  --accent: #3b82f6; /* Bright sky blue (default accent) */
-  --accent-hover: #2563eb;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
   --muted: #64748b;
   --border: #e2e8f0;
-  --card: #f1f5f9;
+  --card: #ffffff;
 }
 
-/* 🧩 Tailwind variable mapping */
+/* ======================================================
+   🧩 TAILWIND VARIABLE MAPPING
+   ====================================================== */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -22,208 +26,476 @@
   --color-card: var(--card);
 }
 
-/* 🌙 Dark Mode */
+/* ======================================================
+   🌙 DARK – PROFESSIONAL / UNIVERSAL
+   ====================================================== */
 html[data-theme="dark"] {
-  --background: #050505;
-  --foreground: #f1f5f9;
-  --accent: #7dd3fc; /* Electric cyan */
-  --accent-hover: #38bdf8;
+  --background: #020617;
+  --foreground: #e5e7eb;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
   --muted: #94a3b8;
   --border: #1e293b;
   --card: #0f172a;
 }
 
-/* 💠 Cyber Theme (Futuristic / Tech Anime) */
+/* ======================================================
+   ⚡ CYBER NEON – GAMING / ANIME / TECH
+   ====================================================== */
 html[data-theme="cyber"] {
-  --background: #030712;
-  --foreground: #e0f2fe;
-  --accent: #00ffff; /* Neon cyan glow */
+  --background: #000814;
+  --foreground: #e0faff;
+  --accent: #00f5ff;
   --accent-hover: #06b6d4;
-  --muted: #94a3b8;
-  --border: #0f172a;
-  --card: #111827;
+  --muted: #7dd3fc;
+  --border: #022c3a;
+  --card: #001d3d;
 }
 
-/* 🌸 Sakura Theme (Romantic / Soft Anime) */
+/* ======================================================
+   🌸 SAKURA – SOFT / ROMANTIC / UI HEAVY
+   ====================================================== */
 html[data-theme="sakura"] {
-  --background: #fff5f8;
-  --foreground: #1f2937;
-  --accent: #ff4d94; /* Hot pink */
-  --accent-hover: #e11d74;
-  --muted: #6b7280;
-  --border: #fbcfe8;
-  --card: #ffe4ef;
+  --background: #fff1f2;
+  --foreground: #3f0d1d;
+  --accent: #fb7185;
+  --accent-hover: #f43f5e;
+  --muted: #9f1239;
+  --border: #fecdd3;
+  --card: #ffe4e6;
 }
 
-/* 💜 Violet Theme (Mystic / Shonen Anime) */
-html[data-theme="violet"] {
-  --background: #0b0b14;
-  --foreground: #e2e8f0;
-  --accent: #a855f7; /* Soft violet */
-  --accent-hover: #9333ea;
-  --muted: #a1a1aa;
-  --border: #2e1065;
-  --card: #1e1b4b;
+/* ======================================================
+   🔥 INFERNO – ACTION / AGGRESSIVE
+   ====================================================== */
+html[data-theme="inferno"] {
+  --background: #0a0a0a;
+  --foreground: #fff7ed;
+  --accent: #f97316;
+  --accent-hover: #ea580c;
+  --muted: #fdba74;
+  --border: #431407;
+  --card: #1c0a00;
 }
 
-/* 🔥 Ember Theme (Energetic / Action Anime) */
-html[data-theme="ember"] {
-  --background: #0f0f0f;
-  --foreground: #fefce8;
-  --accent: #f59e0b; /* Golden amber */
-  --accent-hover: #f97316;
-  --muted: #fcd34d;
-  --border: #78350f;
-  --card: #1c1917;
-}
-
-/* 🌪️ Midnight Purple (Epic Anime Mood) */
-html[data-theme="midnight"] {
-  --background: #080010;
-  --foreground: #e5e7eb;
-  --accent: #8b5cf6; /* Deep purple */
-  --accent-hover: #7c3aed;
-  --muted: #a78bfa;
-  --border: #2d1b69;
-  --card: #100026;
-}
-
-/* 🌊 Ocean Theme (Calm / Slice-of-Life Anime) */
-html[data-theme="ocean"] {
-  --background: #f0f9ff;
-  --foreground: #0c4a6e;
-  --accent: #0ea5e9; /* Sky blue */
-  --accent-hover: #0284c7;
-  --muted: #64748b;
-  --border: #bae6fd;
-  --card: #e0f2fe;
-}
-
-/* 🍃 Forest Theme (Nature / Isekai Anime) */
+/* ======================================================
+   🌲 FOREST – NATURE / CALM / FINANCE
+   ====================================================== */
 html[data-theme="forest"] {
   --background: #f0fdf4;
-  --foreground: #14532d;
-  --accent: #22c55e; /* Emerald green */
+  --foreground: #052e16;
+  --accent: #22c55e;
   --accent-hover: #16a34a;
-  --muted: #6b7280;
+  --muted: #166534;
   --border: #bbf7d0;
   --card: #dcfce7;
 }
 
-/* 🩸 Crimson Theme (Dark / Seinen Anime) */
-html[data-theme="crimson"] {
-  --background: #0a0000;
-  --foreground: #fecaca;
-  --accent: #dc2626; /* Blood red */
-  --accent-hover: #991b1b;
-  --muted: #9ca3af;
-  --border: #450a0a;
-  --card: #1a0000;
+/* ======================================================
+   🌌 VOID PURPLE – MYSTIC / PREMIUM
+   ====================================================== */
+html[data-theme="void"] {
+  --background: #070014;
+  --foreground: #ede9fe;
+  --accent: #8b5cf6;
+  --accent-hover: #7c3aed;
+  --muted: #a78bfa;
+  --border: #2e1065;
+  --card: #12002e;
 }
 
-/* 🌌 Galaxy Theme (Space / Mecha Anime) */
-html[data-theme="galaxy"] {
-  --background: #020617;
-  --foreground: #cbd5e1;
-  --accent: #6366f1; /* Indigo */
-  --accent-hover: #4f46e5;
-  --muted: #818cf8;
+/* ======================================================
+   🕹️ RETRO ARCADE – FUN / GAMING
+   ====================================================== */
+html[data-theme="retro"] {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --accent: #ff0080;
+  --accent-hover: #db2777;
+  --muted: #22d3ee;
   --border: #1e293b;
-  --card: #0f172a;
+  --card: #020617;
 }
 
-/* 🌅 Sunset Theme (Romance / Drama Anime) */
-html[data-theme="sunset"] {
-  --background: #fef3c7;
-  --foreground: #78350f;
-  --accent: #f97316; /* Warm orange */
-  --accent-hover: #ea580c;
-  --muted: #92400e;
-  --border: #fed7aa;
-  --card: #ffedd5;
+/* ======================================================
+   🧊 GLASS – MODERN SAAS / PREMIUM
+   ====================================================== */
+html[data-theme="glass"] {
+  --background: #0b1220;
+  --foreground: #e5e7eb;
+  --accent: #5eead4;
+  --accent-hover: #2dd4bf;
+  --muted: #94a3b8;
+  --border: rgba(255,255,255,0.12);
+  --card: rgba(255,255,255,0.06);
 }
 
-/* ❄️ Ice Theme (Winter / Mystery Anime) */
-html[data-theme="ice"] {
+/* ======================================================
+   🩸 CRIMSON NOIR – DARK / SEINEN
+   ====================================================== */
+html[data-theme="crimson"] {
+  --background: #050000;
+  --foreground: #fee2e2;
+  --accent: #dc2626;
+  --accent-hover: #991b1b;
+  --muted: #b91c1c;
+  --border: #3f0a0a;
+  --card: #120000;
+}
+
+/* ======================================================
+   🌊 AQUA WAVE – FRESH / MODERN UI
+   ====================================================== */
+html[data-theme="aqua"] {
   --background: #ecfeff;
   --foreground: #083344;
-  --accent: #06b6d4; /* Cyan */
+  --accent: #06b6d4;
   --accent-hover: #0891b2;
-  --muted: #475569;
+  --muted: #155e75;
   --border: #a5f3fc;
   --card: #cffafe;
 }
 
-/* 🎭 Monochrome Theme (Psychological / Art Anime) */
-html[data-theme="monochrome"] {
-  --background: #fafafa;
-  --foreground: #171717;
-  --accent: #404040; /* Charcoal */
-  --accent-hover: #262626;
-  --muted: #737373;
-  --border: #d4d4d4;
-  --card: #f5f5f5;
+/* ======================================================
+   🟡 SOLAR GOLD – LUXURY / FINTECH
+   ====================================================== */
+html[data-theme="solar"] {
+  --background: #0c0a09;
+  --foreground: #fff7ed;
+  --accent: #facc15;
+  --accent-hover: #eab308;
+  --muted: #fde68a;
+  --border: #78350f;
+  --card: #1c1917;
 }
 
-/* 🌺 Tropical Theme (Summer / Beach Anime) */
-html[data-theme="tropical"] {
+/* ======================================================
+   🪐 OBSIDIAN – ULTRA DARK / PRO UI
+   ====================================================== */
+html[data-theme="obsidian"] {
+  --background: #000000;
+  --foreground: #d4d4d8;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --muted: #71717a;
+  --border: #18181b;
+  --card: #09090b;
+}
+
+/* ======================================================
+   🧠 SLATE PRO – ADMIN / DASHBOARD
+   ====================================================== */
+html[data-theme="slate"] {
+  --background: #0f172a;
+  --foreground: #e5e7eb;
+  --accent: #64748b;
+  --accent-hover: #475569;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --card: #020617;
+}
+
+/* ======================================================
+   🪙 FINANCE EMERALD – BANKING / CRYPTO
+   ====================================================== */
+html[data-theme="emerald"] {
+  --background: #020617;
+  --foreground: #ecfdf5;
+  --accent: #10b981;
+  --accent-hover: #059669;
+  --muted: #6ee7b7;
+  --border: #064e3b;
+  --card: #022c22;
+}
+
+/* ======================================================
+   🌅 SUNSET GRADIENT – CREATOR / MARKETING
+   ====================================================== */
+html[data-theme="sunset"] {
+  --background: #0f0c29;
+  --foreground: #fff7ed;
+  --accent: #fb923c;
+  --accent-hover: #f97316;
+  --muted: #fdba74;
+  --border: #431407;
+  --card: #1c0a00;
+}
+
+/* ======================================================
+   ❄️ FROST – CLEAN / ACCESSIBLE / GOV
+   ====================================================== */
+html[data-theme="frost"] {
+  --background: #f8fafc;
+  --foreground: #020617;
+  --accent: #0ea5e9;
+  --accent-hover: #0284c7;
+  --muted: #475569;
+  --border: #cbd5f5;
+  --card: #ffffff;
+}
+
+/* ======================================================
+   🌈 PRISM – DESIGN TOOLS / PORTFOLIO
+   ====================================================== */
+html[data-theme="prism"] {
+  --background: #0b0f1a;
+  --foreground: #f8fafc;
+  --accent: #22d3ee;
+  --accent-hover: #06b6d4;
+  --muted: #c084fc;
+  --border: #1e1b4b;
+  --card: #111827;
+}
+
+/* ======================================================
+   🧬 MATRIX – HACKER / TERMINAL
+   ====================================================== */
+html[data-theme="matrix"] {
+  --background: #000000;
+  --foreground: #d1fae5;
+  --accent: #22c55e;
+  --accent-hover: #16a34a;
+  --muted: #4ade80;
+  --border: #052e16;
+  --card: #020617;
+}
+
+/* ======================================================
+   🍂 AUTUMN – BLOG / CONTENT / STORY
+   ====================================================== */
+html[data-theme="autumn"] {
   --background: #fffbeb;
-  --foreground: #134e4a;
-  --accent: #14b8a6; /* Teal */
-  --accent-hover: #0d9488;
-  --muted: #6b7280;
-  --border: #99f6e4;
-  --card: #ccfbf1;
+  --foreground: #3f2d1d;
+  --accent: #d97706;
+  --accent-hover: #b45309;
+  --muted: #92400e;
+  --border: #fde68a;
+  --card: #fef3c7;
 }
 
-/* 👾 Retro Theme (8-bit / Gaming Anime) */
-html[data-theme="retro"] {
-  --background: #1a1a2e;
-  --foreground: #eee;
-  --accent: #ff006e; /* Hot magenta */
-  --accent-hover: #d90368;
-  --muted: #a8dadc;
-  --border: #16213e;
-  --card: #0f3460;
+/* ======================================================
+   🌙 MIDNIGHT BLUE – ENTERPRISE SAAS
+   ====================================================== */
+html[data-theme="midnight"] {
+  --background: #020617;
+  --foreground: #e2e8f0;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --muted: #a5b4fc;
+  --border: #1e293b;
+  --card: #0f172a;
 }
 
-/* 🪄 Smooth Transitions */
+/* ======================================================
+   🧿 NEON LIME – TRENDY / YOUTH
+   ====================================================== */
+html[data-theme="neonlime"] {
+  --background: #020617;
+  --foreground: #f7fee7;
+  --accent: #84cc16;
+  --accent-hover: #65a30d;
+  --muted: #bef264;
+  --border: #365314;
+  --card: #1a2e05;
+}
+/* ================= GIRLY / CUTE THEMES ================= */
+
+/* 🌹 Rose Blush */
+html[data-theme="rose"] {
+  --background: #fff1f2;
+  --foreground: #3f0d1d;
+  --accent: #fb7185;
+  --accent-hover: #f43f5e;
+  --muted: #9f1239;
+  --border: #fecdd3;
+  --card: #ffe4e6;
+}
+
+/* 💜 Lavender Dream */
+html[data-theme="lavender"] {
+  --background: #f5f3ff;
+  --foreground: #2e1065;
+  --accent: #a78bfa;
+  --accent-hover: #8b5cf6;
+  --muted: #7c3aed;
+  --border: #ddd6fe;
+  --card: #ede9fe;
+}
+
+/* 🍑 Peach Glow */
+html[data-theme="peach"] {
+  --background: #fff7ed;
+  --foreground: #7c2d12;
+  --accent: #fb923c;
+  --accent-hover: #f97316;
+  --muted: #ea580c;
+  --border: #fed7aa;
+  --card: #ffedd5;
+}
+
+/* 🍬 Cotton Candy */
+html[data-theme="cotton"] {
+  --background: #fdf2f8;
+  --foreground: #831843;
+  --accent: #f472b6;
+  --accent-hover: #ec4899;
+  --muted: #db2777;
+  --border: #fbcfe8;
+  --card: #fce7f3;
+}
+
+/* 🎀 Bubblegum Pop */
+html[data-theme="bubblegum"] {
+  --background: #fff0f6;
+  --foreground: #701a75;
+  --accent: #e879f9;
+  --accent-hover: #d946ef;
+  --muted: #c026d3;
+  --border: #f5d0fe;
+  --card: #fae8ff;
+}
+
+/* 🍒 Cherry Kiss */
+html[data-theme="cherry"] {
+  --background: #fff1f2;
+  --foreground: #7f1d1d;
+  --accent: #ef4444;
+  --accent-hover: #dc2626;
+  --muted: #f87171;
+  --border: #fecaca;
+  --card: #fee2e2;
+}
+
+/* 🍦 Vanilla Cream */
+html[data-theme="vanilla"] {
+  --background: #fffbeb;
+  --foreground: #78350f;
+  --accent: #facc15;
+  --accent-hover: #eab308;
+  --muted: #ca8a04;
+  --border: #fde68a;
+  --card: #fef3c7;
+}
+/* ================= MANLY / STRONG THEMES ================= */
+
+/* 🔩 Steel Gray */
+html[data-theme="steel"] {
+  --background: #0f172a;
+  --foreground: #e5e7eb;
+  --accent: #94a3b8;
+  --accent-hover: #64748b;
+  --muted: #cbd5f5;
+  --border: #1e293b;
+  --card: #020617;
+}
+
+/* 🛠️ Gunmetal */
+html[data-theme="gunmetal"] {
+  --background: #09090b;
+  --foreground: #e4e4e7;
+  --accent: #71717a;
+  --accent-hover: #52525b;
+  --muted: #a1a1aa;
+  --border: #18181b;
+  --card: #0f0f12;
+}
+
+/* 🖤 Midnight Black */
+html[data-theme="midnightblack"] {
+  --background: #000000;
+  --foreground: #fafafa;
+  --accent: #3f3f46;
+  --accent-hover: #27272a;
+  --muted: #71717a;
+  --border: #18181b;
+  --card: #09090b;
+}
+
+/* 👑 Royal Blue */
+html[data-theme="royalblue"] {
+  --background: #020617;
+  --foreground: #e0e7ff;
+  --accent: #4338ca;
+  --accent-hover: #3730a3;
+  --muted: #a5b4fc;
+  --border: #1e1b4b;
+  --card: #0b0f3f;
+}
+
+/* 🩸 Blood Iron */
+html[data-theme="bloodiron"] {
+  --background: #0a0000;
+  --foreground: #fee2e2;
+  --accent: #991b1b;
+  --accent-hover: #7f1d1d;
+  --muted: #fca5a5;
+  --border: #450a0a;
+  --card: #140000;
+}
+
+/* ⚔️ War Zone */
+html[data-theme="warzone"] {
+  --background: #0b0b0b;
+  --foreground: #fefce8;
+  --accent: #f97316;
+  --accent-hover: #ea580c;
+  --muted: #fdba74;
+  --border: #3f1d0b;
+  --card: #1c0a00;
+}
+
+/* 🏴 Carbon Fiber */
+html[data-theme="carbon"] {
+  --background: #050505;
+  --foreground: #e5e7eb;
+  --accent: #52525b;
+  --accent-hover: #3f3f46;
+  --muted: #a1a1aa;
+  --border: #18181b;
+  --card: #0a0a0a;
+}
+
+
+
+/* ======================================================
+   ✨ GLOBAL STYLES
+   ====================================================== */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Poppins", system-ui, sans-serif;
-  transition: background 0.4s ease, color 0.4s ease, border 0.3s ease;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* ✨ Links */
+/* Links */
 a {
   color: var(--accent);
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover {
   color: var(--accent-hover);
 }
 
-/* 🧱 Utility */
-.border-theme {
-  border-color: var(--border);
-}
+/* Cards */
 .card {
-  background-color: var(--card);
+  background: var(--card);
   color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
-/* 💫 Glow Effect */
-.glow {
-  text-shadow: 0 0 10px var(--accent);
+/* Glass enhancement */
+html[data-theme="glass"] .card {
+  backdrop-filter: blur(14px);
 }
-/* button:hover {
-  box-shadow: 0 0 15px var(--accent);
-} */
 
-/* 🌙 Scrollbar Styling */
+/* Glow utility */
+.glow {
+  text-shadow: 0 0 12px var(--accent);
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
